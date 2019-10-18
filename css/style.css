@@ -1,0 +1,153 @@
+/* *************** \
+       VARIABLES
+\*************** */
+/* *************** \
+       GLOBAL
+\*************** */
+html {
+  font-size: 16px;
+}
+
+html,
+input {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+}
+
+body {
+  border: 1px solid;
+}
+
+#date {
+  font-size: 1.2rem;
+  color: white;
+}
+
+ul {
+  overflow: scroll;
+}
+
+input {
+  font-size: 1rem;
+  border: 0 solid;
+  border: 1px soild black;
+}
+
+.add-to-do,
+body,
+input,
+main {
+  border-radius: 7px;
+}
+
+header {
+  border-radius: 7px 7px 0 0;
+}
+
+.add-to-do input,
+.new-task span {
+  font-weight: 400;
+}
+
+#add-icon,
+#check-icon,
+#clear-icon,
+#delete-icon {
+  cursor: pointer;
+}
+
+#delete-icon:hover {
+  color: red;
+}
+
+.check-text {
+  color: lightgrey;
+  text-decoration: line-through;
+}
+
+/* *************** \
+       LAYOUT
+\*************** */
+body {
+  height: 75%;
+  width: 310px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+
+.content {
+  overflow: scroll;
+  border-bottom: 1px solid black;
+}
+
+/********\
+  HEADER
+\********/
+header {
+  position: relative;
+  height: 30%;
+  background-image: linear-gradient(90deg, #134e5e, #71b280);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+header .clear {
+  position: absolute;
+  right: 0;
+  margin: 20px 20px 0 0;
+}
+header #date {
+  position: absolute;
+  left: 8%;
+  top: 60%;
+}
+
+.content {
+  height: 62%;
+}
+
+.new-task {
+  border-bottom: 1px solid lightgrey;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 12px 0;
+}
+.new-task span {
+  margin: 0;
+  width: 70%;
+  height: 18px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.add-to-do {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 8%;
+}
+.add-to-do input {
+  flex-grow: 0;
+  width: 67%;
+  padding: 5px;
+}
+.add-to-do i {
+  margin: 0 7px 0 15px;
+}
+
+/*# sourceMappingURL=style.css.map */
